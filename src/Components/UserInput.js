@@ -7,7 +7,7 @@ const UserInput = props => {
       <Form.Group>
         <Form.Input
           style={{ margin: "20px 10px", width: "200px" }}
-          placeholder="Name of the challenge"
+          placeholder="Challenge Name"
           type="text"
           name="inpChallengeName"
         />
