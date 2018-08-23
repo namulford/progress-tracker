@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Container, Header, Segment, Icon } from "semantic-ui-react";
+import { Container, Grid, Header, Segment, Icon } from "semantic-ui-react";
 import UserInput from "./Components/UserInput";
 
 class App extends Component {
@@ -25,7 +25,7 @@ class App extends Component {
       <div className="App">
         <div>
           <Header align="left" as="h2" attached="top" color="olive" block>
-          <Icon name="star" />
+          <Icon name="tasks" />
             <Header.Content>
              ProgeTracca
             <Header.Subheader>
