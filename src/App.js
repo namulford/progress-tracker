@@ -6,6 +6,7 @@ import UserInput from './Components/UserInput';
 class App extends Component {
 
   submittedForm = e => {
+    // button click function
       console.log('--- Submit butt is pressed ---');
       e.preventDefault();
       const dataString = e.target.elements.inpChallengeName.value +"|"+e.target.elements.inpEndGoal.value+"|"+e.target.elements.inpUser.value+"|"+e.target.elements.inpRules.value;
