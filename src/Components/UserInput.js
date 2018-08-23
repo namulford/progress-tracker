@@ -3,8 +3,8 @@ import { Button, Input, Form } from "semantic-ui-react";
 
 const UserInput = props => {
   return (
-    <Form>
-      <Form.Group widths="equal" onSubmit={props.Trallala}>
+    <Form onSubmit={props.submittedForm}>
+      <Form.Group widths="equal" >
         <Form.Input
           style={{ margin: "20px 10px" }}
           placeholder="Name of the challenge"
@@ -26,9 +26,12 @@ const UserInput = props => {
           type="text"
           name="inpUser"
         />
+
       </Form.Group>
+
       <Form.TextArea style={{ aligh: "left", width: "32%"}} name="inpRules" placeholder="Special Instructions" />
-      <Button color="olive">Submit</Button>
+<Button color="olive">Submit</Button>
+
     </Form>
   );
 };
