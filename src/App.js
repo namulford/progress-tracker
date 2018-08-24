@@ -8,13 +8,13 @@ import AddChallenge from './components/AddChallenge';
 import AddProgress from './components/AddProgress';
 import ApproveProgress from './components/ApproveProgress';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Container, Grid, Header, Segment, Icon } from "semantic-ui-react";
+import { Container, Grid, Header, Segment, Icon, Button } from "semantic-ui-react";
 import UserInput from "./components/UserInput";
 
 class App extends Component {
   submittedForm = e => {
     // button click function
-    console.log("--- Submit butt is pressed ---");
+    console.log("--- Submit button is pressed ---");
     e.preventDefault();
     const dataString =
       e.target.elements.inpChallengeName.value +
@@ -33,23 +33,33 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <ul>
-              <li>
-                <Link to="/login">Login</Link>
-              </li>
-              <li>
-                <Link to="/HomePage">HomePage</Link>
-              </li>
-              <li>
-                <Link to="/AddChallenge">AddChallenge</Link>
-              </li>
-              <li>
-                <Link to="/AddProgress">AddProgress</Link>
-              </li>
-              <li>
-                <Link to="/ApproveProgress">ApproveProgress</Link>
-              </li>
-            </ul>
+            <Button.Group size="large">
+              <Link to="/login"> 
+                <Button color='red'>
+                  Login
+                </Button>
+              </Link>
+              <Link to="/HomePage">
+                <Button color='orange'>
+                  Homepage
+                </Button>
+              </Link>
+              <Link to="/AddChallenge">
+                <Button color='yellow'>
+                  Add Challenge
+                </Button>
+              </Link>
+              <Link to="/AddProgress">
+                <Button color='green'>
+                  Add Progress
+                </Button>
+              </Link>
+              <Link to="/ApproveProgress">
+                <Button color='blue'>
+                  Approve Progress
+                </Button>
+              </Link>
+            </Button.Group>
             <hr />
             <Route path="/login" component={Login} />
             <Route path="/HomePage" component={HomePage} />
@@ -59,24 +69,15 @@ class App extends Component {
           </div>
         </Router>
         <div>
-          <Header align="left" as="h2" attached="top" color="olive" block>
-          <Icon name="tasks" />
+          <Header as="h2" attached="top" color="pink">
             <Header.Content>
-             ProgeTracca
+             Progress Tracker
             <Header.Subheader>
-              There is an exciting tracker app
+              This is an exciting new progress tracker, customizable just for you!
             </Header.Subheader>
             </Header.Content>
           </Header>
-
-          <Segment align="left" attached>
-            This incredible app was created to pull of you lazy butt from the coach
-             and kick you make a great performance,
-             like to beat the World record in coach side-to-side rolling
-          </Segment>
         </div>
-
-
 
         <UserInput submittedForm={this.submittedForm} />
       </div>
