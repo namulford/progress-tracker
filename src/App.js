@@ -2,11 +2,11 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Login from './components/Login';
-import HomePage from './components/HomePage';
-import AddChallenge from './components/AddChallenge';
-import AddProgress from './components/AddProgress';
-import ApproveProgress from './components/ApproveProgress';
+import Login from './Components/Login';
+import HomePage from './Components/HomePage';
+import AddChallenge from './Components/AddChallenge';
+import AddProgress from './Components/AddProgress';
+import ApproveProgress from './Components/ApproveProgress';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { Container, Grid, Header, Segment, Icon } from "semantic-ui-react";
 import UserInput from "./Components/UserInput";
