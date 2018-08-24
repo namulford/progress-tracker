@@ -8,6 +8,8 @@ import AddChallenge from './components/AddChallenge';
 import AddProgress from './components/AddProgress';
 import ApproveProgress from './components/ApproveProgress';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Container, Grid, Header, Segment, Icon } from "semantic-ui-react";
+import UserInput from "./Components/UserInput";
 
 class App extends Component {
   submittedForm = e => {
