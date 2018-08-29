@@ -33,21 +33,21 @@ class App extends Component {
       <div className="App">
         <Router>
           <div>
-            <ul>
+            <ul class ="menu">
               <li>
-                <Link to="/login">Login</Link>
+                <button><Link to="/login">Login</Link></button>
               </li>
               <li>
-                <Link to="/HomePage">HomePage</Link>
+                <button><Link to="/HomePage">Home Page</Link></button>
               </li>
               <li>
-                <Link to="/AddChallenge">AddChallenge</Link>
+                <button><Link to="/AddChallenge">Add Challenge</Link></button>
               </li>
               <li>
-                <Link to="/AddProgress">AddProgress</Link>
+                <button><Link to="/AddProgress">Add Progress</Link></button>
               </li>
               <li>
-                <Link to="/ApproveProgress">ApproveProgress</Link>
+                <button><Link to="/ApproveProgress">Approve Progress</Link></button>
               </li>
             </ul>
             <hr />

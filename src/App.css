@@ -22,6 +22,18 @@
   font-size: large;
 }
 
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: dodgerblue;
+}
+
+.menu button {
+  background-color: papayawhip;
+  width: 200px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
